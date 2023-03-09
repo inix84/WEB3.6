@@ -1,24 +1,33 @@
 package me.shulinina.web36.model;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Ingredient {
-    private final String nameIngredient;
-    private final int  amountOfIngredient;     //ингредиенты
-    private final String unitOfMeasurement;    //единица измерения
-    public Ingredient(String nameIngredient, int amountOfIngredient, String unitOfMeasurement) {
-        this.nameIngredient = nameIngredient;
-        this.amountOfIngredient = amountOfIngredient;
-        this.unitOfMeasurement = unitOfMeasurement;
-    }
-    @Override
-    public String toString() {
-        return nameIngredient + amountOfIngredient + unitOfMeasurement;
-    }
-    public String getNameIngredient() {
-        return nameIngredient;
-    }
-    public int getAmountOfIngredient() {
-        return amountOfIngredient;
-    }
-    public String getUnitOfMeasurement() {
-        return unitOfMeasurement;
-    }
+        private String nameIngredient;
+    private int  amountOfIngredient;     //ингредиенты
+    private String unitOfMeasurement;    //единица измерения
+//    private final String nameIngredient;
+//    private final int  amountOfIngredient;     //ингредиенты
+//    private final String unitOfMeasurement;    //единица измерения
+//    public Ingredient(String nameIngredient, int amountOfIngredient, String unitOfMeasurement) {
+//        this.nameIngredient = nameIngredient;
+//        this.amountOfIngredient = amountOfIngredient;
+//        this.unitOfMeasurement = unitOfMeasurement;
+//    }
+//    @Override
+//    public String toString() {
+//        return nameIngredient + amountOfIngredient + unitOfMeasurement;
+//    }
+//    public String getNameIngredient() {
+//        return nameIngredient;
+//    }
+//    public int getAmountOfIngredient() {
+//        return amountOfIngredient;
+//    }
+//    public String getUnitOfMeasurement() {
+//        return unitOfMeasurement;
+//    }
 }
